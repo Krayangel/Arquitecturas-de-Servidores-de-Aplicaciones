@@ -4,19 +4,12 @@ package app;
 public class HelloController {
 
 	@GetMapping("/")
-	public static String index() {
+	public String index() {
 		return "Greetings from Spring Boot!";
 	}
 
-	@GetMapping("/pi")
-	public static String wmPi() {
-		return "PI=" +Math.PI;
-	}
-
 	@GetMapping("/hello")
-	public static String wmHello() {
-		return "Hello WOrld";
+	public String hello() {
+		return "Hello World from MicroSpringBoot!";
 	}
-
-	
 }
